@@ -1,0 +1,15 @@
+.productos {
+  padding: 40px;
+}
+
+.productos h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.contenedor-tarjetas {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
