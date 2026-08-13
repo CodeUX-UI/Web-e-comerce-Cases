@@ -1,4 +1,4 @@
-function TarjetaCarcasa({ producto }) {
+function TarjetaCarcasa({ producto, agregarAlCarrito }) {
   return (
     <article>
       <img src={producto.imagen} alt={producto.nombre} />
@@ -7,7 +7,9 @@ function TarjetaCarcasa({ producto }) {
       <h3>{producto.nombre}</h3>
       <p>{producto.modelo}</p>
       <p>S/ {producto.precio}</p>
-      <button>Agregar al carrito</button>
+      <button onClick={() => agregarAlCarrito(producto)}>
+        Agregar al carrito
+      </button> 
     </article>
   )
 }

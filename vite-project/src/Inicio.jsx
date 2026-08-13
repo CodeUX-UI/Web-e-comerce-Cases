@@ -2,7 +2,7 @@ import TarjetaCarcasa from "./TarjetaCarcasa"
 import productos from "./productos"
 import "./Inicio.css"
 
-function Inicio() {
+function Inicio({ agregarAlCarrito }) {
   return (
     <main id="inicio">
       <h1>Protege tu celular con tu propio estilo</h1>
@@ -16,9 +16,10 @@ function Inicio() {
         <div className="contenedor-tarjetas">
             {productos.map((producto, index) => (
            <TarjetaCarcasa
-           key={index}
-           producto={producto}
-  />
+  key={index}
+  producto={producto}
+  agregarAlCarrito={agregarAlCarrito}
+/>
 ))}
         </div>
     </div>  
