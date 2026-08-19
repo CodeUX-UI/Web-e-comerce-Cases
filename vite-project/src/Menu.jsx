@@ -1,3 +1,7 @@
+import "./Menu.css"
+
+
+
 function Menu({ setPagina, carrito }) {
   return (
     <nav>

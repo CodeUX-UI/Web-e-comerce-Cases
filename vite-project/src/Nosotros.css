@@ -1,0 +1,110 @@
+.nosotros {
+  padding: 40px;
+}
+
+/* Presentación */
+
+.presentacion {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  max-width: 1100px;
+  margin: 0 auto 60px;
+}
+
+.presentacion-texto {
+  flex: 1;
+}
+
+.presentacion-texto h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.presentacion-texto h2 {
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+}
+
+.presentacion-texto p {
+  line-height: 1.7;
+}
+
+.presentacion-imagen {
+  flex: 1;
+}
+
+.presentacion-imagen img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+
+/* ¿Por qué elegirnos? */
+
+.porque-elegirnos {
+  max-width: 1100px;
+  margin: 0 auto 60px;
+}
+
+.porque-elegirnos > h2 {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.beneficios {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.beneficios article {
+  flex: 1;
+  min-width: 200px;
+  text-align: center;
+  padding: 20px;
+}
+
+.beneficios h3 {
+  margin-bottom: 15px;
+}
+
+.beneficios p {
+  line-height: 1.6;
+}
+
+
+/* Misión y visión */
+
+.mision-vision {
+  display: flex;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: #f5f5f8;
+  border-radius: 10px;
+  gap: 40px;
+}
+
+.mision-vision article {
+  flex: 1;
+  text-align: center;
+}
+
+.mision-vision article + article {
+  border-left: 1px solid #ccc;
+  padding-left: 40px;
+}
+
+.mision-vision h2 {
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+}
+
+.mision-vision p {
+  line-height: 1.6;
+}

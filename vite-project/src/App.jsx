@@ -4,6 +4,7 @@ import Inicio from "./Inicio"
 import Carcasas from "./Carcasas"
 import Nosotros from "./Nosotros"
 import Carrito from "./Carrito"
+import Footer from "./Footer"
 
 function App() {
 
@@ -20,26 +21,30 @@ function eliminarDelCarrito(index) {
 
   return (
     <>
-      <Menu setPagina={setPagina} carrito={carrito}/>
-      
+  <Menu setPagina={setPagina} carrito={carrito}/>
 
-      {pagina === "inicio" && (
-  <Inicio agregarAlCarrito={agregarAlCarrito} />
-)}
+<div className="contenido">
 
+  {pagina === "inicio" && (
+    <Inicio agregarAlCarrito={agregarAlCarrito} />
+  )}
 
-      {pagina === "carcasas" && (
-  <Carcasas agregarAlCarrito={agregarAlCarrito} />
-)}
+  {pagina === "carcasas" && (
+    <Carcasas agregarAlCarrito={agregarAlCarrito} />
+  )}
 
-      {pagina === "nosotros" && <Nosotros />}
+  {pagina === "nosotros" && <Nosotros />}
 
-      {pagina === "carrito" && (
-  <Carrito
-    carrito={carrito}
-    eliminarDelCarrito={eliminarDelCarrito}
-  />
-)}
+  {pagina === "carrito" && (
+    <Carrito
+      carrito={carrito}
+      eliminarDelCarrito={eliminarDelCarrito}
+    />
+  )}
+
+</div>
+
+<Footer />
     </>
   )
 }

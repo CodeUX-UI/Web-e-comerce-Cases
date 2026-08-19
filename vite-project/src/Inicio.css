@@ -1,4 +1,23 @@
+.banner {
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.banner img {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Contenido principal */
+#inicio {
+  text-align: center;
+  padding: 20px;
+}
+
 .productos {
+  margin-top: 20px;
   padding: 40px;
 }
 
@@ -7,75 +26,57 @@
   margin-bottom: 30px;
 }
 
+/* Productos destacados */
 .contenedor-tarjetas {
   display: flex;
   justify-content: center;
-  gap: 25px;
+  gap: 30px;
   flex-wrap: wrap;
 }
 
-/* Estilos generales del contenedor */
-#inicio {
-  text-align: center;
-  padding: 20px;
-}
-
-.productos {
-  margin-top: 20px;
-}
-
-.productos h2 {
-  margin-bottom: 20px;
-}
-
-/* Alineación de las tarjetas una al lado de otra */
-.contenedor-tarjetas {
+/* Tarjetas destacadas */
+.destacados {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 30px;
   flex-wrap: wrap;
 }
 
-/* Estilo básico de la tarjeta */
-.contenedor-tarjetas article {
+.destacados article {
   border: 1px solid #ccc;
-  border-radius: 8px;
-  width: 200px;
-  padding: 15px;
+  border-radius: 12px;
+  width: 320px;
+  padding: 25px;
   background-color: #fff;
   text-align: center;
 }
 
-/* Imagen dentro de la tarjeta */
-.contenedor-tarjetas article img {
+.destacados article img {
   width: 100%;
-  height: 180px;
+  height: 300px;
   object-fit: contain;
 }
 
-/* Título de la tarjeta */
-.contenedor-tarjetas article h3 {
-  font-size: 1.1rem;
-  margin: 10px 0 5px 0;
+.destacados article h3 {
+  font-size: 1.3rem;
+  margin: 15px 0 8px;
 }
 
-/* Párrafos (modelo y precio) */
-.contenedor-tarjetas article p {
-  margin: 5px 0;
+.destacados article p {
+  margin: 6px 0;
   color: #555;
 }
 
-/* Botón de compra */
-.contenedor-tarjetas article button {
+.destacados article button {
   background-color: #28a745;
   color: white;
   border: none;
-  padding: 8px 12px;
+  padding: 10px 15px;
   border-radius: 5px;
   cursor: pointer;
-  margin-top: 10px;
+  margin-top: 12px;
 }
 
-.contenedor-tarjetas article button:hover {
+.destacados article button:hover {
   background-color: #218838;
 }

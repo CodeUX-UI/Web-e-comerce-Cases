@@ -5,6 +5,7 @@ function TarjetaCarcasa({ producto, agregarAlCarrito }) {
 
 
       <h3>{producto.nombre}</h3>
+      <p>{producto.marca}</p>
       <p>{producto.modelo}</p>
       <p>S/ {producto.precio}</p>
       <button onClick={() => agregarAlCarrito(producto)}>
